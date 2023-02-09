@@ -100,7 +100,7 @@ export const TasksListActions = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 50px;
+  width: 80px;
 `;
 
 export const SvgIcon = styled.svg`
