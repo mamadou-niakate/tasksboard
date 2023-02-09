@@ -8,6 +8,7 @@ import {
   TasksListHeader,
   TasksListTitle,
   TasksListTitleBox,
+  TasksListActions,
 } from "../styles/tasksStyles";
 import TasksListItemForm from "./tasksListItemForm";
 
@@ -41,7 +42,7 @@ export function TasksList({
           <TasksListTitle>{title}</TasksListTitle>
           <TasksListCount>{tasks.length}</TasksListCount>
         </TasksListTitleBox>
-        <tasksListEdits>
+        <TasksListActions>
           <SvgIcon onClick={editList}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@ export function TasksList({
               />
             </svg>
           </SvgIcon>
-        </tasksListEdits>
+        </TasksListActions>
       </TasksListHeader>
 
       {tasks?.map((task) => {
